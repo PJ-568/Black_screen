@@ -1,0 +1,48 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!min'
+
+jobs:
+  Release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Clone
+        run: |
+          echo '创建 tree/：'
+          mkdir /home/runner/tree
+          echo '克隆 main 分支：'
+          git clone https://github.com/PJ-568/Black_screen.git -b main  /home/runner/tree/main
+          echo '检查 tree/main：'
+          ls /home/runner/tree/main
+      
+      - name: Checkout min branch
+        uses: actions/checkout@v3
+        with:
+          ref: min
+
+      - name: Merge
+        run: |
+          echo '清空 min：'
+          rm -r ./*
+          echo '检查 min：'
+          ls
+          echo '移动 tree/main/* 到 min/：'
+          cp -v -u -r /home/runner/tree/main/* .
+          
+      - name: HTML/CSS/JS Minifier
+        uses: docker://devatherock/minify-js:2.0.0
+        with:
+          add_suffix: false     # Optional
+
+      - name: Push
+        run: |
+          git config --global user.name "PJ569-bot"
+          git config --global user.email "LiuTian-PJ568@PJ568.eu.org"
+          git add -A
+          git commit -m '自动 Release'
+          git push
