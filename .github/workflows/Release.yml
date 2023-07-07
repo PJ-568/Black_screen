@@ -44,5 +44,5 @@ jobs:
           git config --global user.name "PJ569-bot"
           git config --global user.email "LiuTian-PJ568@PJ568.eu.org"
           git add -A
-          git commit -m '自动 Release'
+          git commit -m '自动压缩'
           git push
