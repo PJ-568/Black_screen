@@ -4,7 +4,7 @@
 
 > 🌏[简体中文](./README.md) | English
 
-> 🗃️[Github](https://github.com/PJ-568/Black_screen) | [Gitee](https://gitee.com/PJ-568/Black_screen)
+> 🗃️[Github](https://github.com/PJ-568/Black_screen) | [Gitee](https://gitee.com/PJ-568/Black_screen) | [GitLab](https://gitLab.com/PJ-568/Black_screen)
 
 # <img height="30" style="margin: -3px 5px;" src="https://Tools.PJ568.eu.org/img/icon.svg"/>Black_screen
 
