@@ -10,7 +10,7 @@
 
 * 一个能显示全屏黑色的HTML文件。
 
-<a style="font-size:14px;margin:10px 0.8%;border:2px solid #0277BD;border-radius:6px;background:#424242;width:200px;min-height:62px;line-height:20px;box-sizing:border-box;display:flex;align-items:center" href="https://tools.pj568.eu.org/incert/?link=/lib/tools/%E9%BB%91%E8%89%B2%E5%85%A8%E5%B1%8F/">点击访问</a>
+<a style="font-size:14px;margin:10px 0.8%;border:2px solid #0277BD;border-radius:6px;background:#424242;width:200px;min-height:62px;line-height:20px;box-sizing:border-box;display:flex;align-items:center" href="https://tools.pj568.eu.org/incert/?link=/lib/tools/Black_screen/">点击访问</a>
 
 ## 🪴项目活动
 
