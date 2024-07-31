@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <!-- 本文件由 PJ568 撰写 -->
-<!-- 本文件遵循 Apache License Version 2.0 -->
+<!-- 本文件遵循 Attribution-ShareAlike 4.0 International -->
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<script src="/js/loading.js"></script>
 	<title>全屏黑色页面</title>
 	<link rel="icon" type="image/svg+xml" href="/img/icon.svg">
 	<style type="text/css">
-
-		html, body {
+		html,
+		body {
 			margin: 0;
 			padding: 0;
 			width: 100%;
@@ -32,8 +33,8 @@
 		}
 
 		a:hover {
-			color:#BDBDBD;
-            background-color: #212121;
+			color: #BDBDBD;
+			background-color: #212121;
 		}
 
 		#home {
@@ -53,7 +54,7 @@
 			top: 20px;
 			left: 20px
 		}
-		
+
 		#fullScreenBtn {
 			position: fixed;
 			top: calc(50% - 25px);
@@ -88,17 +89,19 @@
 		}
 
 		#fullScreenBtn:hover {
-			color:#BDBDBD;
-            background-color: #212121;
+			color: #BDBDBD;
+			background-color: #212121;
 		}
 
 		#exitBtn:hover {
-			color:#BDBDBD;
-            background-color:#212121;
+			color: #BDBDBD;
+			background-color: #212121;
 		}
+
 		@import url(/css/tool_type.css);
 	</style>
 </head>
+
 <body>
 	<div id="loading">
 		<div id="loading_bg">
@@ -119,7 +122,7 @@
 	var home = document.getElementById("home");
 	var timeoutId = null;
 
-	fullScreenBtn.onclick = function() {
+	fullScreenBtn.onclick = function () {
 		if (document.documentElement.requestFullscreen) {
 			document.documentElement.requestFullscreen();
 		} else if (document.documentElement.mozRequestFullScreen) {
@@ -129,36 +132,36 @@
 		} else if (document.documentElement.msRequestFullscreen) {
 			document.documentElement.msRequestFullscreen();
 		}
-
-		fullScreenBtn.style.display = "none";
 	};
 
-	exitBtn.onclick = function() {
+	exitBtn.onclick = function () {
 		window.open('', '_self', ''); window.close();
 	};
 
-	document.onmousemove = function() {
+	document.onmousemove = function () {
 		clearTimeout(timeoutId);
-		timeoutId = setTimeout(function() {
+		timeoutId = setTimeout(function () {
 			document.body.style.cursor = "none";
+			fullScreenBtn.style.display = "none";
 			exitBtn.style.display = "none";
 			download.style.display = "none";
 			back.style.display = "none";
 			home.style.display = "none";
 		}, 3000);
 		document.body.style.cursor = "default";
+		fullScreenBtn.style.display = "block";
 		exitBtn.style.display = "block";
 		download.style.display = "block";
 		back.style.display = "block";
 		home.style.display = "block";
 	};
 
-	document.onkeydown = function(event) {
+	document.onkeydown = function (event) {
 		if (event.keyCode === 32) {
 			window.open('', '_self', ''); window.close();
 		}
 	};
 
 </script>
+
 </html>
-<script src="/js/push_to_baidu.js"></script>
