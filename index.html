@@ -1,4 +1,5 @@
-<!doctype html><meta charset=UTF-8><script src=/js/loading.js></script><title>全屏黑色页面</title><link rel=icon type=image/svg+xml href=/img/icon.svg><style>html, body {
+<!doctype html><meta charset=UTF-8><script src=/js/loading.js></script><title>全屏黑色页面</title><link rel=icon type=image/svg+xml href=/img/icon.svg><style>html,
+		body {
 			margin: 0;
 			padding: 0;
 			width: 100%;
@@ -21,8 +22,8 @@
 		}
 
 		a:hover {
-			color:#BDBDBD;
-            background-color: #212121;
+			color: #BDBDBD;
+			background-color: #212121;
 		}
 
 		#home {
@@ -42,7 +43,7 @@
 			top: 20px;
 			left: 20px
 		}
-		
+
 		#fullScreenBtn {
 			position: fixed;
 			top: calc(50% - 25px);
@@ -77,12 +78,13 @@
 		}
 
 		#fullScreenBtn:hover {
-			color:#BDBDBD;
-            background-color: #212121;
+			color: #BDBDBD;
+			background-color: #212121;
 		}
 
 		#exitBtn:hover {
-			color:#BDBDBD;
-            background-color:#212121;
+			color: #BDBDBD;
+			background-color: #212121;
 		}
-		@import url(/css/tool_type.css);</style><div id=loading><div id=loading_bg><div class=loader>正在加载</div></div></div><a id=back onclick=history.go(-1)>尝试返回</a> <a id=download href=index.html download=黑色全屏.html>下载本页</a> <a id=home href=/ >返回主页</a><div id=fullScreenBtn>进入全屏</div><div id=exitBtn>退出</div><script>var fullScreenBtn=document.getElementById("fullScreenBtn"),exitBtn=document.getElementById("exitBtn"),download=document.getElementById("download"),back=document.getElementById("back"),home=document.getElementById("home"),timeoutId=null;fullScreenBtn.onclick=function(){document.documentElement.requestFullscreen?document.documentElement.requestFullscreen():document.documentElement.mozRequestFullScreen?document.documentElement.mozRequestFullScreen():document.documentElement.webkitRequestFullScreen?document.documentElement.webkitRequestFullScreen():document.documentElement.msRequestFullscreen&&document.documentElement.msRequestFullscreen(),fullScreenBtn.style.display="none"},exitBtn.onclick=function(){window.open("","_self",""),window.close()},document.onmousemove=function(){clearTimeout(timeoutId),timeoutId=setTimeout((function(){document.body.style.cursor="none",exitBtn.style.display="none",download.style.display="none",back.style.display="none",home.style.display="none"}),3e3),document.body.style.cursor="default",exitBtn.style.display="block",download.style.display="block",back.style.display="block",home.style.display="block"},document.onkeydown=function(e){32===e.keyCode&&(window.open("","_self",""),window.close())}</script><script src=/js/push_to_baidu.js></script>
+
+		@import url(/css/tool_type.css);</style><div id=loading><div id=loading_bg><div class=loader>正在加载</div></div></div><a id=back onclick=history.go(-1)>尝试返回</a> <a id=download href=index.html download=黑色全屏.html>下载本页</a> <a id=home href=/ >返回主页</a><div id=fullScreenBtn>进入全屏</div><div id=exitBtn>退出</div><script>var fullScreenBtn=document.getElementById("fullScreenBtn"),exitBtn=document.getElementById("exitBtn"),download=document.getElementById("download"),back=document.getElementById("back"),home=document.getElementById("home"),timeoutId=null;fullScreenBtn.onclick=function(){document.documentElement.requestFullscreen?document.documentElement.requestFullscreen():document.documentElement.mozRequestFullScreen?document.documentElement.mozRequestFullScreen():document.documentElement.webkitRequestFullScreen?document.documentElement.webkitRequestFullScreen():document.documentElement.msRequestFullscreen&&document.documentElement.msRequestFullscreen()},exitBtn.onclick=function(){window.open("","_self",""),window.close()},document.onmousemove=function(){clearTimeout(timeoutId),timeoutId=setTimeout((function(){document.body.style.cursor="none",fullScreenBtn.style.display="none",exitBtn.style.display="none",download.style.display="none",back.style.display="none",home.style.display="none"}),3e3),document.body.style.cursor="default",fullScreenBtn.style.display="block",exitBtn.style.display="block",download.style.display="block",back.style.display="block",home.style.display="block"},document.onkeydown=function(e){32===e.keyCode&&(window.open("","_self",""),window.close())}</script>
