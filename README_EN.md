@@ -55,7 +55,7 @@ Every contributions to this project is welcomed.
 
 ## 📄License
 
-Licensed under the terms of [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0). For full details about the license, please check the `LICENSE` file.
+Licensed under the terms of [Attribution-ShareAlike 4.0 International](./LICENSE). For full details about the license, please check the `LICENSE` file.
 
 ## ⭐Star History
 

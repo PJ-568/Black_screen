@@ -56,7 +56,7 @@
 
 ## 📄许可证
 
-本项目遵循 [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) 许可协议。如果想了解完整许可信息，请查阅 `LICENSE` 。
+本项目遵循 [Attribution-ShareAlike 4.0 International](./LICENSE) 许可协议。如果想了解完整许可信息，请查阅 `LICENSE` 。
 
 ## ⭐Star 历史
 
